@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Safari Error</title>
+    <title>Warning: Deceptive Site Ahead</title>
     <style>
         body {
-            background-color: #f7f7f7;
+            background-color: #ff5959; /* Red background color */
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
             text-align: center;
+            color: #fff;
         }
 
-        .error-container {
+        .warning-container {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -21,46 +22,45 @@
             height: 100vh;
         }
 
-        .error-icon {
-            font-size: 100px;
-            color: #ff5959; /* Safari red */
+        .warning-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
         }
 
-        .error-text {
+        .warning-text {
             font-size: 24px;
             font-weight: bold;
-            color: #333;
-            margin-top: 20px;
         }
 
-        .error-message {
+        .additional-info {
             font-size: 18px;
-            color: #666;
             margin-top: 20px;
         }
 
-        .refresh-button {
-            background-color: #4285f4; /* Blue */
+        .continue-button {
+            background-color: #ff3b30; /* Dark red */
             color: #fff;
             font-size: 18px;
             padding: 10px 20px;
             border: none;
             cursor: pointer;
             margin-top: 20px;
-            border-radius: 5px;
         }
 
-        .refresh-button:hover {
-            background-color: #357ae8; /* Slightly darker blue on hover */
+        .continue-button:hover {
+            background-color: #d32f2f; /* Slightly darker red on hover */
         }
     </style>
 </head>
 <body>
-    <div class="error-container">
-        <div class="error-icon">🚫</div>
-        <div class="error-text">Server Not Found</div>
-        <div class="error-message">The server could not be reached or the connection was reset.</div>
-        <button class="refresh-button">Refresh Page</button>
+    <div class="warning-container">
+        <div class="warning-icon">⚠️</div>
+        <div class="warning-text">Deceptive Site Ahead</div>
+        <div class="additional-info">Attackers may try to steal your information.</div>
+        <p>It's not safe to continue to this website.</p>
+        <button class="continue-button">Back to Safety</button>
+        <p>If you understand the risks, you can</p>
+        <a href="#">Continue to the site (not recommended)</a>
     </div>
 </body>
 </html>
