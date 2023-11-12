@@ -1,106 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<title>saddadd</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safari Error</title>
+    <style>
+        body {
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
 
-    <meta name="keywords" content="نظام سداد للمدفوعات , سداد, حل واحد لجميع المدفعات, مؤسسة النقد العربي السعودي">
-    <meta name="description"
-        content="نظام سداد للمدفوعات هو أحد أنظمة مؤسسة النقد العربي السعودي، وهو نظام مركزي لعرض ودفع الفواتير والمدفوعات الأخرى إلكترونياً في المملكة العربية السعودية، حيث أن مهمته الأساسية هي تسهيل وتسريع عملية دفع الفواتير والمدفوعات الأخرى عبر جميع القنوات المصرفية في المملكة (فروع البنوك وأجهزة الصرف الآلي والهاتف المصرفي والإنترنت المصرفية.">
-	<meta  property="og:image" itemprop="image"   content="https://fawri8fawribawaba.vercel.app/images/metaimg.png">
+        .error-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
+        .error-icon {
+            font-size: 100px;
+            color: #ff5959; /* Safari red */
+        }
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link
-		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-		rel="stylesheet">
+        .error-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        .error-message {
+            font-size: 18px;
+            color: #666;
+            margin-top: 20px;
+        }
+
+        .refresh-button {
+            background-color: #4285f4; /* Blue */
+            color: #fff;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        .refresh-button:hover {
+            background-color: #357ae8; /* Slightly darker blue on hover */
+        }
+    </style>
 </head>
-
 <body>
-
-
-	<div class="top-header w-100 float-left">
-		<div class="header-container mx-auto">
-			<!--<div class="row">
-    <div class="col-sm-12">
-    <ul class="social-icons pl-0 mb-2">
-	<li><a href="#">E</a></li>
-	<li><a href="#"><span>ع</span></a></li>
-	<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-	<li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-	</ul>
-</div>
-</div>-->
-			<div class="top-menu w-100 float-left">
-				<div class="row">
-					<div class="col-sm-12"><img src="./images/12.png" class="mx-auto w-100"></div>
-					<!--<div class="col-sm-9">
-	<div class="top-menu-content">
-	<ul class="menu pl-0">
-	<li><a href="#">السعودية</a></li>
-	<li><a href="#">السعودية</a></li>
-	<li><a href="#">السعودية</a></li>
-	<li><a href="#">السعودية</a></li>
-	<li><a href="#">السعودية</a></li>
-	</ul>
-	</div>
-	</div>
-	
-	<div class="col-sm-3">
-	<img class="d-table ml-auto" src="images/logo.png"/>
-	
-	</div>-->
-
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<div class="Content w-100 float-left">
-		<div class="Content-container mx-auto">
-			<div class="row">
-				<div class="col-sm-12">
-					<p class="mb-0">الرئيسية/ شخصي </p>
-					<h3 class="mb-0">السداد الحكومي </h3>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<div class="Details w-100 float-left">
-		<div class="Details-container mx-auto">
-			<div class="row">
-				<div class="col-sm-12">
-					<h1 class="mb-0">رقم السداد</h1>
-					<h2>مع فواتير سداد يمكنك دفع كل الفواتير من خلال البنك كفواتير الكهرباء والمياه والاتصالات والرسوم
-						الحكومية</h2>
-					<p class="mb-0">نظام سداد للمدفوعات هو أحد أنظمة مؤسسة النقد العربي السعودي، تم إطلاقه عام ٢٠٠٤
-						كنظام مركزي لعرض ودفع الفواتير والمدفوعات الأخرى إلكترونياً في المملكة العربية السعودية. اليوم،
-						يقوم سداد بتسهيل وتسريع مختلف المدفوعات للأفراد والمصارف والشركات والقطاع الحكومي، ويستمر في
-						تطوير خدمات جديدة تشمل كافة المدفوعات، فيهدف سداد الى تقديم حلٍ واحد لجميع المدفوعات</p>
-						<form action="home.html" method="get">
-							<button type="submit">بدا الخدمة</button>
-						</form>
-					
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="footer w-100 float-left">
-		<div class="container">
-			<h1 class="text-center">SADAD 2023</h1>
-			<p class="text-center mb-0 "> <span>1444-2023</span> جميع الحقوق محفوظة </p>
-		</div>
-	</div>
+    <div class="error-container">
+        <div class="error-icon">🚫</div>
+        <div class="error-text">Server Not Found</div>
+        <div class="error-message">The server could not be reached or the connection was reset.</div>
+        <button class="refresh-button">Refresh Page</button>
+    </div>
 </body>
-
 </html>
